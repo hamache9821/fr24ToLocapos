@@ -1,0 +1,30 @@
+{
+  "name": "fr24 to locapos adapter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "homepage": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "debug": "node-dev app.js"
+  },
+  "author": {
+    "name": "Hamache9821",
+    "url": "http://github.com/hamache9821"
+  },
+  "repository" :{
+     "type" : "git"
+    ,"url" : "https://github.com/hamache9821/fr24ToLocapos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hamache9821/fr24ToLocapos/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "locapos": "*"
+  },
+  "engines": {
+    "node": ">=5.6.0"
+  }
+}
