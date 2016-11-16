@@ -1,8 +1,8 @@
 {
-  "name": "fr24 to locapos adapter",
-  "version": "0.1.0",
+  "name": "fr24ToLocapos",
+  "version": "0.1.5",
   "private": true,
-  "description": "",
+  "description": "fr24 to locapos adapter",
   "homepage": "",
   "main": "app.js",
   "scripts": {
