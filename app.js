@@ -1,13 +1,16 @@
-
-if (process.argv.length != 4){
-    console.log('usage: app.js `locapos_token` `trace_key`');
+if (process.argv.length != 3){
+    console.log('usage: app.js `trace_key`');
     return;
 }
 
+const config = require('config');
+
+if (!config.locapos_token) {throw 'config `locapos_token` is not set';}
+
 const http = require('https')
      ,locapos = require('locapos')
-     ,client = new locapos(process.argv[2])
-     ,trace_key = process.argv[3];
+     ,client = new locapos(config.locapos_token)
+     ,trace_key = process.argv[2];
 
 setInterval(function(){
     var args = 'faa=1&mlat=1&flarm=1&adsb=1&gnd=1&air=1&vehicles=1&estimated=1&maxage=7200&gliders=1&stats=1&selected=' + trace_key + '&ems=1';

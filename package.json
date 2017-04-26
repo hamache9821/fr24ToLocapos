@@ -1,13 +1,13 @@
 {
   "name": "fr24ToLocapos",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "private": true,
   "description": "fr24 to locapos adapter",
   "homepage": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "debug": "node-dev app.js"
+    "start": "NODE_ENV=default node app.js",
+    "test" : "NODE_ENV=development node-dev app.js"
   },
   "author": {
     "name": "Hamache9821",
@@ -22,6 +22,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "config": "*",
     "locapos": "*"
   },
   "engines": {
